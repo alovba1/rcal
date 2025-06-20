@@ -20,6 +20,7 @@ public class ApiRest {
     @GetMapping
     public List<UnitMeasure> listar() {
         return unitMeasureUseCase.findUnitMeasureAll();
+
     }
 
     @GetMapping(path = { "/{id}" })
